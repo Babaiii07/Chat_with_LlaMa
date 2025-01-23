@@ -9,7 +9,7 @@ def initialize_groq_llm():
     return ChatGroq(
         groq_api_key=os.getenv("GROQ_API_KEY"),
         model_name="llama-3.3-70b-versatile",
-        max_tokens=2000
+        max_tokens=3000
     )
 
 def generate_response(use_case, input_text, additional_input=None):
